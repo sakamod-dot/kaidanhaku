@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* ボタンとの間に余白を追加 */
+}
+
+textarea {
+    margin-right: 10px;
+}
+
+#patternContainer {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px; /* 最大高さを設定 */
+    overflow-y: auto; /* スクロールバーを表示 */
+}
+
+.pattern {
+    margin-bottom: 10px;
+}
+
+.memo-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#memoZone {
+    width: 50%;
+}
