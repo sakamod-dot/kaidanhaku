@@ -25,8 +25,20 @@ document.getElementById('addButton').addEventListener('click', function() {
 document.getElementById('convertButton').addEventListener('click', updateScenario);
 
 document.getElementById('rollDiceButton').addEventListener('click', function() {
-    const result = Math.floor(Math.random() * 6) + 1;
-    document.getElementById('diceResult').textContent = `結果: ${result}`;
+    const diceSound = document.getElementById('diceSound');
+    diceSound.play();
+
+    const diceResult = document.getElementById('diceResult');
+    const diceFaces = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅'];
+    let count = 0;
+    const interval = setInterval(() => {
+        const result = Math.floor(Math.random() * 6);
+        diceResult.innerHTML = `結果: ${diceFaces[result]} (${result + 1})`;
+        count++;
+        if (count > 10) {
+            clearInterval(interval);
+        }
+    }, 100);
 });
 
 function updateScenario() {
