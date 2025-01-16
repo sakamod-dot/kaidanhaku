@@ -12,10 +12,18 @@
         <textarea id="inputZone" rows="10" cols="50" placeholder="ここにシナリオを入力してください。"></textarea>
         <div id="patternContainer"></div>
     </div>
-    <button id="addButton">変換パターンを追加</button>
+    <div class="button-container">
+        <button id="addButton">変換パターンを追加</button>
+        <button id="convertButton">一括変換</button>
+    </div>
     <div class="memo-container">
         <h2>メモ</h2>
         <textarea id="memoZone" rows="5" cols="50" placeholder="ここにメモを入力してください。"></textarea>
+    </div>
+    <div class="dice-container">
+        <h2>1d6を振る</h2>
+        <button id="rollDiceButton">簡易六面サイコロ</button>
+        <p id="diceResult">結果: -</p>
     </div>
     <script src="script.js"></script>
 </body>
