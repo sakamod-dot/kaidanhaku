@@ -22,6 +22,13 @@ document.getElementById('addButton').addEventListener('click', function() {
     });
 });
 
+document.getElementById('convertButton').addEventListener('click', updateScenario);
+
+document.getElementById('rollDiceButton').addEventListener('click', function() {
+    const result = Math.floor(Math.random() * 6) + 1;
+    document.getElementById('diceResult').textContent = `結果: ${result}`;
+});
+
 function updateScenario() {
     const inputZone = document.getElementById('inputZone');
     let scenarioText = inputZone.value;
