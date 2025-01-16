@@ -40,3 +40,11 @@ textarea {
 #memoZone {
     width: 50%;
 }
+
+.dice-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
