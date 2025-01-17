@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <audio id="diceSound" src="daice.wav"></audio>
 </head>
 <body>
-    <h1>怪談白アシストツール</h1>
+    <h1 class="futidori">怪談白アシストツール</h1>
     <div class="container">
         <textarea id="inputZone" rows="10" cols="50" placeholder="ここにシナリオを入力してください。"></textarea>
         <div id="patternContainer"></div>
@@ -17,14 +17,14 @@
         <button id="addButton">変換パターンを追加</button>
         <button id="convertButton">一括変換</button>
     </div>
-    <div class="memo-container">
-        <h2>メモ</h2>
-        <textarea id="memoZone" rows="5" cols="50" placeholder="ここにメモを入力してください。"></textarea>
-    </div>
     <div class="dice-container">
-        <h2>簡易六面サイコロ</h2>
+        <h2 class="futidori">簡易六面サイコロ</h2>
         <button id="rollDiceButton">ロール</button>
-        <p id="diceResult">結果: -</p>
+        <p id="diceResult" class="futidori">結果: -</p>
+    </div>
+    <div class="memo-container">
+        <h2 class="futidori">メモ</h2>
+        <textarea id="memoZone" rows="5" cols="50" placeholder="ここにメモを入力してください。"></textarea>
     </div>
     <script src="script.js"></script>
 </body>

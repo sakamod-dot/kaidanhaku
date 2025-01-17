@@ -6,7 +6,17 @@ body {
     margin: 0;
     text-align: center;
     flex-direction: column;
+    background-image: url('rousoku.jpg');
+    background-size: cover;
+    background-position: center; /* 画像を上に配置 */
+    color: white;
 }
+
+.futidori {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
+  }
 
 .container {
     display: flex;
@@ -16,6 +26,7 @@ body {
 
 textarea {
     margin-right: 10px;
+    color: black; /* テキストエリア内のテキスト色を黒に設定 */
 }
 
 #patternContainer {
@@ -39,6 +50,7 @@ textarea {
 
 #memoZone {
     width: 50%;
+    color: black; /* テキストエリア内のテキスト色を黒に設定 */
 }
 
 .dice-container {
